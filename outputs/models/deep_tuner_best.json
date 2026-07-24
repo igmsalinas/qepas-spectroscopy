@@ -1,0 +1,70 @@
+{
+  "best_params": {
+    "architecture": "multiscale_cnn",
+    "normalization": "none",
+    "activation": "relu",
+    "dropout": 0.1,
+    "l2": 2.247203144416587e-06,
+    "scalar_units": 4,
+    "dense_units": 96,
+    "conv_blocks": 1,
+    "initial_filters": 48,
+    "kernel_size": 5,
+    "strides": 1,
+    "dense_blocks": 1,
+    "optimizer": "adamw",
+    "learning_rate": 0.0009094607513410072,
+    "lr_schedule": "constant",
+    "warmup_epochs": 6,
+    "use_clipnorm": true,
+    "loss": "huber",
+    "resnet_blocks": 3,
+    "base_filters": 32,
+    "weight_decay": 0.08,
+    "clipnorm": 3.5,
+    "huber_delta": 0.6,
+    "filters": 32
+  },
+  "normalizers": {
+    "signal": {
+      "mean": [
+        0.0015029747737571597,
+        -0.7906767129898071,
+        -0.00013115005276631564,
+        -0.0009082631440833211
+      ],
+      "std": [
+        0.0008116722456179559,
+        2.2808001041412354,
+        0.001394808990880847,
+        0.0003607271355576813
+      ]
+    },
+    "scalar": {
+      "mean": [
+        0.9000008702278137,
+        0.8999714851379395,
+        110.03571319580078,
+        1000.0,
+        30.31788444519043
+      ],
+      "std": [
+        3.4641165257198736e-05,
+        1.3113021850585938e-06,
+        0.4987231492996216,
+        1.0,
+        0.03829948231577873
+      ]
+    },
+    "target": {
+      "mean": [
+        1.2371151447296143,
+        110.61283111572266
+      ],
+      "std": [
+        0.8247439861297607,
+        73.74195861816406
+      ]
+    }
+  }
+}

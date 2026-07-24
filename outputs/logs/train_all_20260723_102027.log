@@ -1,0 +1,8 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1784794830.867355    5704 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Usage: qepas-train [OPTIONS]
+Try 'qepas-train --help' for help.
+╭─ Error ─────────────────────────────────────────────────────────────────────────────────╮
+│ Got unexpected extra argument(s) (train)                                                │
+╰─────────────────────────────────────────────────────────────────────────────────────────╯

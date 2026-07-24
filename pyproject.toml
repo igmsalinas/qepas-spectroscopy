@@ -1,0 +1,32 @@
+[project]
+name = "qepas-spectroscopy"
+version = "0.2.0"
+description = "CO2 isotope concentration prediction from QEPAS spectroscopy data"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "jupyterlab>=4.6.2",
+    "keras-tuner>=1.4.8",
+    "matplotlib>=3.11.1",
+    "mlflow>=1.27.0",
+    "numpy>=2.5.1",
+    "openpyxl>=3.1.5",
+    "pandas>=3.0.3",
+    "pyyaml>=6.0.3",
+    "scikit-learn>=1.9.0",
+    "scipy",
+    "seaborn>=0.13.2",
+    "tensorboard>=2.21.0",
+    "tensorflow[and-cuda]>=2.21.0",
+    "typer>=0.27.0",
+    "xgboost>=3.3.0",
+]
+
+[project.scripts]
+qepas-train = "qepas_spectroscopy.cli:app"
+
+[tool.setuptools.packages.find]
+include = ["qepas_spectroscopy*"]
+
+[tool.uv]
+package = true
