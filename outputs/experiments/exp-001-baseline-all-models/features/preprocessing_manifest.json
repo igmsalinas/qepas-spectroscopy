@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "preprocessing_id": "qepas-raw-v1:length=4096:resampling=polyphase:channels=modulus+phase_sin+phase_cos",
+  "sample_count": 140,
+  "signal_length": 4096,
+  "signal_names": [
+    "modulus",
+    "phase_sin",
+    "phase_cos"
+  ],
+  "scalar_names": [
+    "vector_med_presion",
+    "vector_cons_presion",
+    "vector_med_flujo",
+    "vector_cons_flujo",
+    "vector_temp_Vflujo"
+  ]
+}

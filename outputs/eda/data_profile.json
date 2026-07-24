@@ -1,0 +1,49 @@
+{
+  "scan_count": 150,
+  "group_count": 7,
+  "group_counts": {
+    "12:46:00": 20,
+    "12:55:42": 20,
+    "13:05:15": 20,
+    "13:14:37": 20,
+    "13:24:02": 20,
+    "13:33:30": 20,
+    "13:43:08": 30
+  },
+  "balanced_scans_per_group": 20,
+  "balanced_scan_count": 140,
+  "signal_lengths": [
+    200000
+  ],
+  "signal_dtypes": [
+    "float64"
+  ],
+  "nonfinite_values": 0,
+  "modulus_identity_relative_mae": 1.3370434862380532e-06,
+  "phase_xy_circular_mae_radians": 0.002801416888805586,
+  "phase_wrap_jumps": {
+    "min": 11,
+    "median": 42.5,
+    "max": 171
+  },
+  "target_correlation": 0.9999999999999585,
+  "correlations_with_13co2": {
+    "mod_mean": 0.9839740640374754,
+    "mod_std": 0.9786206070493217,
+    "mod_max": 0.9838684872077873,
+    "phase_sin_mean": -0.9550738778671123,
+    "phase_cos_mean": 0.9852644129895843,
+    "P_med": -0.14885322811572124,
+    "P_cons": null,
+    "F_med": 0.11813809415902998,
+    "F_cons": null,
+    "Temp": -0.2279044299411526
+  },
+  "scalar_unique_counts": {
+    "P_med": 3,
+    "P_cons": 1,
+    "F_med": 3,
+    "F_cons": 1,
+    "Temp": 2
+  }
+}

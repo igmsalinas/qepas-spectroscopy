@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "experiment_id": "exp-003c-literature-deep-valid",
+  "status": "completed",
+  "started_at": "2026-07-24T14:04:55.909259+00:00",
+  "completed_at": "2026-07-24T14:15:06.868607+00:00",
+  "options": {
+    "deep_tuner_trials": 12,
+    "deep_tuner_epochs": 30,
+    "deep_tuner_executions": 1,
+    "deep_epochs": 60,
+    "signal_length": 2048,
+    "resampling_method": "polyphase",
+    "include_cartesian_signals": false,
+    "deep_batch_size": 8,
+    "deep_early_stopping_patience": 10,
+    "skip_deep": false,
+    "skip_traditional": true,
+    "skip_xgb_tune": true,
+    "resume": false,
+    "architectures": [
+      "inception_spectra",
+      "dilated_resnet1d"
+    ],
+    "tensorboard_dir": null,
+    "traditional_suite": "baseline"
+  },
+  "sample_count": 140,
+  "group_count": 7,
+  "metrics": [
+    {
+      "model": "DeepLearning",
+      "target": "13CO2",
+      "rmse": 0.5011811610110098,
+      "mae": 0.4188339114189148,
+      "r2": 0.6307232975959778
+    },
+    {
+      "model": "DeepLearning",
+      "target": "12CO2",
+      "rmse": 49.90916798372945,
+      "mae": 39.768821716308594,
+      "r2": 0.5419301390647888
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "format_version": 4,
+  "test_group": "13:14:37",
+  "preprocessing_id": "qepas-raw-v1:length=2048:resampling=polyphase:channels=modulus+phase_sin+phase_cos",
+  "normalizers": {
+    "signal": {
+      "mean": [
+        0.001549146487377584,
+        -0.1836526095867157,
+        -0.6731967329978943
+      ],
+      "std": [
+        0.0008825215045362711,
+        0.669801652431488,
+        0.25386184453964233
+      ]
+    },
+    "scalar": {
+      "mean": [
+        0.9000011682510376,
+        0.8999717235565186,
+        110.0199966430664,
+        1000.0,
+        30.325023651123047
+      ],
+      "std": [
+        3.502881736494601e-05,
+        1.0728836059570312e-06,
+        0.5095098614692688,
+        1.0,
+        0.04330143705010414
+      ]
+    },
+    "target": {
+      "mean": [
+        1.3195892572402954,
+        117.9870834350586
+      ],
+      "std": [
+        0.9547100067138672,
+        85.36248016357422
+      ]
+    }
+  },
+  "model": {
+    "kind": "tuned",
+    "best_params": {
+      "architecture": "inception_spectra",
+      "normalization": "batch",
+      "activation": "gelu",
+      "dropout": 0.2,
+      "l2": 5.349907529492789e-07,
+      "scalar_units": 40,
+      "dense_units": 48,
+      "inception_modules": 6,
+      "inception_filters": 32,
+      "inception_bottleneck_filters": 32,
+      "inception_kernel_size": 63,
+      "inception_stem_stride": 2,
+      "inception_residual_interval": 2,
+      "inception_use_residual": false,
+      "optimizer": "adamw",
+      "learning_rate": 0.0030304819108925543,
+      "lr_schedule": "exponential_decay",
+      "warmup_epochs": 0,
+      "use_clipnorm": false,
+      "loss": "logcosh",
+      "weight_decay": 0.001278755919726026
+    },
+    "epochs": 60,
+    "steps_per_epoch": 13
+  }
+}

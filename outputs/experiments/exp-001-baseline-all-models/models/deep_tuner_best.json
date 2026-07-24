@@ -1,0 +1,67 @@
+{
+  "best_params": {
+    "architecture": "simple_cnn",
+    "normalization": "layer",
+    "activation": "swish",
+    "dropout": 0.2,
+    "l2": 2.6820988917015965e-05,
+    "scalar_units": 28,
+    "dense_units": 32,
+    "conv_blocks": 1,
+    "initial_filters": 48,
+    "kernel_size": 9,
+    "strides": 4,
+    "dense_blocks": 1,
+    "optimizer": "adam",
+    "learning_rate": 0.00036276965095376624,
+    "lr_schedule": "cosine_decay",
+    "warmup_epochs": 4,
+    "use_clipnorm": false,
+    "loss": "huber",
+    "weight_decay": 0.0018109755285331535,
+    "clipnorm": 1.0,
+    "huber_delta": 0.1
+  },
+  "normalizers": {
+    "signal": {
+      "mean": [
+        0.0014055961510166526,
+        -0.166800394654274,
+        -0.7105121612548828
+      ],
+      "std": [
+        0.0006948192603886127,
+        0.6425673365592957,
+        0.2335352897644043
+      ]
+    },
+    "scalar": {
+      "mean": [
+        0.9000024199485779,
+        0.899971604347229,
+        110.00833129882812,
+        1000.0,
+        30.316701889038086
+      ],
+      "std": [
+        3.496975114103407e-05,
+        1.1920928955078125e-06,
+        0.49152496457099915,
+        1.0,
+        0.03726796805858612
+      ]
+    },
+    "target": {
+      "mean": [
+        1.030929684638977,
+        92.1773681640625
+      ],
+      "std": [
+        0.7042587995529175,
+        62.96916961669922
+      ]
+    }
+  },
+  "validation_group": "13:43:08",
+  "preprocessing_id": "qepas-raw-v1:length=4096:resampling=polyphase:channels=modulus+phase_sin+phase_cos"
+}

@@ -1,0 +1,16 @@
+{
+  "version": 5,
+  "input_shape": [
+    2048,
+    3
+  ],
+  "scalar_dim": 5,
+  "num_outputs": 2,
+  "max_epochs": 30,
+  "executions_per_trial": 1,
+  "allowed_architectures": [
+    "inception_spectra",
+    "dilated_resnet1d"
+  ],
+  "preprocessing_id": "qepas-raw-v1:length=2048:resampling=polyphase:channels=modulus+phase_sin+phase_cos"
+}

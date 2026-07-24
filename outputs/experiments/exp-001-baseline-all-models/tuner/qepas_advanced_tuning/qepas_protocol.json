@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "input_shape": [
+    4096,
+    3
+  ],
+  "scalar_dim": 5,
+  "num_outputs": 2,
+  "max_epochs": 20,
+  "allowed_architectures": [
+    "simple_cnn"
+  ],
+  "preprocessing_id": "qepas-raw-v1:length=4096:resampling=polyphase:channels=modulus+phase_sin+phase_cos"
+}

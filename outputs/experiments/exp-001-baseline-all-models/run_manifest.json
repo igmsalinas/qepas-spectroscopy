@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "experiment_id": "exp-001-baseline-all-models",
+  "status": "completed",
+  "started_at": "2026-07-24T13:25:29.272388+00:00",
+  "completed_at": "2026-07-24T13:27:44.190293+00:00",
+  "options": {
+    "deep_tuner_trials": 3,
+    "deep_tuner_epochs": 20,
+    "deep_epochs": 40,
+    "signal_length": 4096,
+    "resampling_method": "polyphase",
+    "include_cartesian_signals": false,
+    "deep_batch_size": 16,
+    "deep_early_stopping_patience": 6,
+    "skip_deep": false,
+    "skip_xgb_tune": true,
+    "resume": false,
+    "architectures": [
+      "simple_cnn"
+    ],
+    "tensorboard_dir": null
+  },
+  "sample_count": 140,
+  "group_count": 7,
+  "metrics": [
+    {
+      "model": "Ridge",
+      "target": "13CO2",
+      "rmse": 0.23337148566631594,
+      "mae": 0.18189691007137299,
+      "r2": 0.9199321866035461
+    },
+    {
+      "model": "Ridge",
+      "target": "12CO2",
+      "rmse": 20.86611914033167,
+      "mae": 16.26382827758789,
+      "r2": 0.9199328422546387
+    },
+    {
+      "model": "RandomForest",
+      "target": "13CO2",
+      "rmse": 0.3327955427521145,
+      "mae": 0.31170897453759394,
+      "r2": 0.8371763755196466
+    },
+    {
+      "model": "RandomForest",
+      "target": "12CO2",
+      "rmse": 29.755889152383695,
+      "mae": 27.87050440048127,
+      "r2": 0.837176555377697
+    },
+    {
+      "model": "XGBoost",
+      "target": "13CO2",
+      "rmse": 0.34217425629928017,
+      "mae": 0.315698504447937,
+      "r2": 0.8278697729110718
+    },
+    {
+      "model": "XGBoost",
+      "target": "12CO2",
+      "rmse": 30.370505671557293,
+      "mae": 27.514257431030273,
+      "r2": 0.8303807377815247
+    },
+    {
+      "model": "GradientBoosting",
+      "target": "13CO2",
+      "rmse": 0.35962671443123484,
+      "mae": 0.33986406426811744,
+      "r2": 0.8098631447894806
+    },
+    {
+      "model": "GradientBoosting",
+      "target": "12CO2",
+      "rmse": 31.76370887539237,
+      "mae": 29.39864491264034,
+      "r2": 0.8144617364585222
+    },
+    {
+      "model": "DeepLearning",
+      "target": "13CO2",
+      "rmse": 0.30866637763532684,
+      "mae": 0.251103937625885,
+      "r2": 0.8599312901496887
+    },
+    {
+      "model": "DeepLearning",
+      "target": "12CO2",
+      "rmse": 28.158600805373947,
+      "mae": 22.92300796508789,
+      "r2": 0.8541880249977112
+    }
+  ]
+}

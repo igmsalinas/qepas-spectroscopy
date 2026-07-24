@@ -23,10 +23,16 @@ dependencies = [
 ]
 
 [project.scripts]
-qepas-train = "qepas_spectroscopy.cli:app"
+qepas-train = "qepas_spectroscopy.interfaces.cli:app"
+qepas-profile = "qepas_spectroscopy.interfaces.profile_cli:app"
 
 [tool.setuptools.packages.find]
 include = ["qepas_spectroscopy*"]
 
 [tool.uv]
 package = true
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.0",
+]

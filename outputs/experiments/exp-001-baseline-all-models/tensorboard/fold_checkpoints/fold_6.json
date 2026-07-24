@@ -1,0 +1,73 @@
+{
+  "format_version": 3,
+  "test_group": "13:43:08",
+  "preprocessing_id": "qepas-raw-v1:length=4096:resampling=polyphase:channels=modulus+phase_sin+phase_cos",
+  "normalizers": {
+    "signal": {
+      "mean": [
+        0.0013145649572834373,
+        -0.15527395904064178,
+        -0.7424231171607971
+      ],
+      "std": [
+        0.000582161417696625,
+        0.613926112651825,
+        0.21878933906555176
+      ]
+    },
+    "scalar": {
+      "mean": [
+        0.9000018239021301,
+        0.8999717235565186,
+        110.01000213623047,
+        1000.0,
+        30.319032669067383
+      ],
+      "std": [
+        3.5115157515974715e-05,
+        1.0728836059570312e-06,
+        0.5384231805801392,
+        1.0,
+        0.03923030570149422
+      ]
+    },
+    "target": {
+      "mean": [
+        0.8247437477111816,
+        73.7419204711914
+      ],
+      "std": [
+        0.5831815004348755,
+        52.1434211730957
+      ]
+    }
+  },
+  "model": {
+    "kind": "tuned",
+    "best_params": {
+      "architecture": "simple_cnn",
+      "normalization": "layer",
+      "activation": "swish",
+      "dropout": 0.2,
+      "l2": 2.6820988917015965e-05,
+      "scalar_units": 28,
+      "dense_units": 32,
+      "conv_blocks": 1,
+      "initial_filters": 48,
+      "kernel_size": 9,
+      "strides": 4,
+      "dense_blocks": 1,
+      "optimizer": "adam",
+      "learning_rate": 0.00036276965095376624,
+      "lr_schedule": "cosine_decay",
+      "warmup_epochs": 4,
+      "use_clipnorm": false,
+      "loss": "huber",
+      "weight_decay": 0.0018109755285331535,
+      "clipnorm": 1.0,
+      "huber_delta": 0.1
+    },
+    "epochs": 40,
+    "steps_per_epoch": 7
+  }
+}

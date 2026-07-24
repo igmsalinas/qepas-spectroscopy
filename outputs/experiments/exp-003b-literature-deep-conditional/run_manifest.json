@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "experiment_id": "exp-003b-literature-deep-conditional",
+  "status": "interrupted",
+  "started_at": "2026-07-24T14:01:33.602863+00:00",
+  "completed_at": null,
+  "options": {
+    "deep_tuner_trials": 12,
+    "deep_tuner_epochs": 30,
+    "deep_tuner_executions": 1,
+    "deep_epochs": 60,
+    "signal_length": 2048,
+    "resampling_method": "polyphase",
+    "include_cartesian_signals": false,
+    "deep_batch_size": 8,
+    "deep_early_stopping_patience": 10,
+    "skip_deep": false,
+    "skip_traditional": true,
+    "skip_xgb_tune": true,
+    "resume": false,
+    "architectures": [
+      "inception_spectra",
+      "dilated_resnet1d"
+    ],
+    "tensorboard_dir": null,
+    "traditional_suite": "baseline"
+  },
+  "sample_count": null,
+  "group_count": null,
+  "error": "Interrupted after detecting that val_loss is not comparable across searched loss families."
+}

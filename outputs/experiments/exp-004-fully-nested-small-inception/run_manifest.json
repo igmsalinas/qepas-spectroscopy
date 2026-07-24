@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "experiment_id": "exp-004-fully-nested-small-inception",
+  "status": "completed",
+  "started_at": "2026-07-24T15:14:47.267711+00:00",
+  "completed_at": "2026-07-24T15:47:35.081345+00:00",
+  "options": {
+    "deep_tuner_trials": 3,
+    "deep_tuner_epochs": 20,
+    "deep_tuner_executions": 1,
+    "deep_protocol": "nested-small-data",
+    "deep_seeds": 5,
+    "deep_augmentation_ablation": true,
+    "deep_epochs": 40,
+    "signal_length": 2048,
+    "resampling_method": "polyphase",
+    "include_cartesian_signals": false,
+    "deep_batch_size": 8,
+    "deep_early_stopping_patience": 6,
+    "skip_deep": false,
+    "skip_traditional": true,
+    "skip_xgb_tune": true,
+    "resume": false,
+    "architectures": null,
+    "tensorboard_dir": null,
+    "traditional_suite": "baseline"
+  },
+  "sample_count": 140,
+  "group_count": 7,
+  "metrics": [
+    {
+      "model": "InceptionNestedNoAug",
+      "target": "13CO2",
+      "rmse": 0.329751208328451,
+      "mae": 0.281448632478714,
+      "r2": 0.8401416540145874
+    },
+    {
+      "model": "InceptionNestedNoAug",
+      "target": "12CO2",
+      "rmse": 29.80135548216253,
+      "mae": 25.14432144165039,
+      "r2": 0.8366786241531372
+    },
+    {
+      "model": "InceptionNestedAug",
+      "target": "13CO2",
+      "rmse": 0.26477657186300757,
+      "mae": 0.2080572098493576,
+      "r2": 0.8969325423240662
+    },
+    {
+      "model": "InceptionNestedAug",
+      "target": "12CO2",
+      "rmse": 24.45858565226892,
+      "mae": 19.9200439453125,
+      "r2": 0.8899896144866943
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "version": 7,
+  "input_shape": [
+    2048,
+    3
+  ],
+  "scalar_dim": 5,
+  "num_outputs": 2,
+  "max_trials": 3,
+  "max_epochs": 20,
+  "batch_size": 8,
+  "early_stopping_patience": 4,
+  "executions_per_trial": 1,
+  "random_state": 42,
+  "objective": "val_mae",
+  "validation_group": "13:33:30",
+  "search_profile": "small_inception",
+  "allowed_architectures": [
+    "inception_spectra"
+  ],
+  "preprocessing_id": "qepas-raw-v1:length=2048:resampling=polyphase:channels=modulus+phase_sin+phase_cos"
+}

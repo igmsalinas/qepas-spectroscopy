@@ -1,0 +1,254 @@
+{
+  "protocol": "nested_leave_one_group_out",
+  "selection_metric": "mean_target_range_normalized_rmse",
+  "models": {
+    "RidgeNestedFull": {
+      "feature_set": "full",
+      "feature_count": 91,
+      "outer_folds": [
+        {
+          "fold": 0,
+          "test_group": "12:46:00",
+          "inner_nrmse": 0.07440753255591637,
+          "parameters": {
+            "alpha": 100.0
+          }
+        },
+        {
+          "fold": 1,
+          "test_group": "12:55:42",
+          "inner_nrmse": 0.0979231846554021,
+          "parameters": {
+            "alpha": 100.0
+          }
+        },
+        {
+          "fold": 2,
+          "test_group": "13:05:15",
+          "inner_nrmse": 0.07005845297779692,
+          "parameters": {
+            "alpha": 100.0
+          }
+        },
+        {
+          "fold": 3,
+          "test_group": "13:14:37",
+          "inner_nrmse": 0.07517323727434116,
+          "parameters": {
+            "alpha": 100.0
+          }
+        },
+        {
+          "fold": 4,
+          "test_group": "13:24:02",
+          "inner_nrmse": 0.07200474236915155,
+          "parameters": {
+            "alpha": 100.0
+          }
+        },
+        {
+          "fold": 5,
+          "test_group": "13:33:30",
+          "inner_nrmse": 0.07799067049162564,
+          "parameters": {
+            "alpha": 100.0
+          }
+        },
+        {
+          "fold": 6,
+          "test_group": "13:43:08",
+          "inner_nrmse": 0.0914640366381469,
+          "parameters": {
+            "alpha": 100.0
+          }
+        }
+      ]
+    },
+    "RidgeNestedCompact": {
+      "feature_set": "compact_spectroscopy",
+      "feature_count": 25,
+      "outer_folds": [
+        {
+          "fold": 0,
+          "test_group": "12:46:00",
+          "inner_nrmse": 0.06257511850176337,
+          "parameters": {
+            "alpha": 10.0
+          }
+        },
+        {
+          "fold": 1,
+          "test_group": "12:55:42",
+          "inner_nrmse": 0.07400727997859821,
+          "parameters": {
+            "alpha": 100.0
+          }
+        },
+        {
+          "fold": 2,
+          "test_group": "13:05:15",
+          "inner_nrmse": 0.06055286171733904,
+          "parameters": {
+            "alpha": 10.0
+          }
+        },
+        {
+          "fold": 3,
+          "test_group": "13:14:37",
+          "inner_nrmse": 0.06185794535437897,
+          "parameters": {
+            "alpha": 10.0
+          }
+        },
+        {
+          "fold": 4,
+          "test_group": "13:24:02",
+          "inner_nrmse": 0.06101110490621303,
+          "parameters": {
+            "alpha": 10.0
+          }
+        },
+        {
+          "fold": 5,
+          "test_group": "13:33:30",
+          "inner_nrmse": 0.06532691718977415,
+          "parameters": {
+            "alpha": 100.0
+          }
+        },
+        {
+          "fold": 6,
+          "test_group": "13:43:08",
+          "inner_nrmse": 0.07309049801111442,
+          "parameters": {
+            "alpha": 10.0
+          }
+        }
+      ]
+    },
+    "PLSNestedFull": {
+      "feature_set": "full",
+      "feature_count": 91,
+      "outer_folds": [
+        {
+          "fold": 0,
+          "test_group": "12:46:00",
+          "inner_nrmse": 0.07147280192438372,
+          "parameters": {
+            "n_components": 2
+          }
+        },
+        {
+          "fold": 1,
+          "test_group": "12:55:42",
+          "inner_nrmse": 0.1024403973188467,
+          "parameters": {
+            "n_components": 2
+          }
+        },
+        {
+          "fold": 2,
+          "test_group": "13:05:15",
+          "inner_nrmse": 0.07230403271337495,
+          "parameters": {
+            "n_components": 2
+          }
+        },
+        {
+          "fold": 3,
+          "test_group": "13:14:37",
+          "inner_nrmse": 0.07779471581610325,
+          "parameters": {
+            "n_components": 3
+          }
+        },
+        {
+          "fold": 4,
+          "test_group": "13:24:02",
+          "inner_nrmse": 0.07506845366967504,
+          "parameters": {
+            "n_components": 3
+          }
+        },
+        {
+          "fold": 5,
+          "test_group": "13:33:30",
+          "inner_nrmse": 0.07952010209186677,
+          "parameters": {
+            "n_components": 3
+          }
+        },
+        {
+          "fold": 6,
+          "test_group": "13:43:08",
+          "inner_nrmse": 0.09472739945795927,
+          "parameters": {
+            "n_components": 3
+          }
+        }
+      ]
+    },
+    "PLSNestedCompact": {
+      "feature_set": "compact_spectroscopy",
+      "feature_count": 25,
+      "outer_folds": [
+        {
+          "fold": 0,
+          "test_group": "12:46:00",
+          "inner_nrmse": 0.06311704933437204,
+          "parameters": {
+            "n_components": 5
+          }
+        },
+        {
+          "fold": 1,
+          "test_group": "12:55:42",
+          "inner_nrmse": 0.07420398111124521,
+          "parameters": {
+            "n_components": 5
+          }
+        },
+        {
+          "fold": 2,
+          "test_group": "13:05:15",
+          "inner_nrmse": 0.0596620474709804,
+          "parameters": {
+            "n_components": 5
+          }
+        },
+        {
+          "fold": 3,
+          "test_group": "13:14:37",
+          "inner_nrmse": 0.058917781928745375,
+          "parameters": {
+            "n_components": 2
+          }
+        },
+        {
+          "fold": 4,
+          "test_group": "13:24:02",
+          "inner_nrmse": 0.05986502541261553,
+          "parameters": {
+            "n_components": 2
+          }
+        },
+        {
+          "fold": 5,
+          "test_group": "13:33:30",
+          "inner_nrmse": 0.06331060379012869,
+          "parameters": {
+            "n_components": 2
+          }
+        },
+        {
+          "fold": 6,
+          "test_group": "13:43:08",
+          "inner_nrmse": 0.06666078954034937,
+          "parameters": {
+            "n_components": 3
+          }
+        }
+      ]
+    }
+  }
+}
